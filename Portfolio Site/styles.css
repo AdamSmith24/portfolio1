@@ -1,3 +1,4 @@
+/*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 *{
     margin: 0;
@@ -258,17 +259,19 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "What I Provide";
+    content: "";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
+    height: 370px;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .services .serv-content .card:hover{
     background: crimson;
 }
@@ -291,9 +294,13 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
 /* skills section styling */
 .skills .title::after{
     content: "What I Know";
+}
+.p1{
+    color: #fff;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -535,6 +542,7 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
